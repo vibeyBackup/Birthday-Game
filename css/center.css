@@ -1,0 +1,133 @@
+#main-panel {
+  background: center / contain no-repeat url(./../assets/images/map-empty.jpg);
+  aspect-ratio: 1920/1080;
+  width: 64%;
+  height: 100%;
+  position: relative;
+}
+
+#location {
+  transform: scale(1.2);
+  background: center / contain no-repeat url(./../assets/images/starter.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#character {
+  background: center / contain no-repeat url(./../assets/images/sam.png);
+  display: none;
+  width: 36.5%;
+  height: 74%;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+#unga-unga-form {
+  display: none;
+  background: left / contain no-repeat url(./../assets/images/form.png);
+  width: 35%;
+  height: 15%;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+#apero {
+  background: center / contain no-repeat url(./../assets/images/apero.jpg);
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  animation: rave 2s ease-in-out infinite;
+}
+
+#apero-crowd {
+  background: center / contain no-repeat url(./../assets/images/apero-crowd.png);
+  width: 100%;
+  height: 100%;
+  animation: rave 1s ease-in-out infinite;
+  position: absolute;
+}
+
+#you-win p:first-child {
+  font-family: Slackey;
+  font-size: 4vw;
+  margin-top: 4vw;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 0.5vw black;
+  animation: rave 1s ease-in-out infinite;
+}
+
+#you-win p:last-child {
+  font-family: Slackey;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 0.5vw black;
+  animation: rave 1s ease-in-out infinite;
+}
+
+#info-panel {
+  background: center / contain no-repeat url(./../assets/images/info-panel.png);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  position: absolute;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(0.5vw);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes rave {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#back-to-map {
+  z-index: 1;
+  position: absolute;
+  left: 56.3vw;
+  top: 30vw;
+  width: 6vw;
+  height: 4.5vw;
+  display: none;
+  cursor: pointer;
+}
+
+#back-button {
+  position: absolute;
+  background: center / contain no-repeat url(./../assets/images/goback.png);
+  bottom: 0;
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+#map-button {
+  position: absolute;
+  background: center / contain no-repeat url(./../assets/images/map.png);
+  top: 0;
+  right: 0;
+  width: 5vw;
+  height: 4.5vw;
+}

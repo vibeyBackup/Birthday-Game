@@ -1,0 +1,109 @@
+@import url(./timer.css);
+@import url(./left.css);
+@import url(./right.css);
+@import url(./center.css);
+@import url(./map.css);
+@import url(./add-item.css);
+@import url(./items.css);
+@import url(./form.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Slackey;
+  src: url(./../assets/fonts/Slackey-Regular.ttf);
+}
+
+@keyframes pop-out {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes alert {
+  30% {
+    transform: scale(1.05);
+  }
+  40%,
+  60% {
+    transform: rotate(-1deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(1deg) scale(1.05);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.add-alert {
+  animation: 2s ease 0s 1 alert;
+}
+
+.hover:hover {
+  transform: scale(1.05);
+  animation: 0.35s ease-out 0s 1 pop-out;
+  cursor: pointer;
+}
+
+.hover:active {
+  transform: scale(0.9);
+}
+
+.glow:hover {
+  filter: drop-shadow(0 0 0.2rem rgb(207, 164, 22));
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#top-bar {
+  background-color: black;
+  height: 18%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+
+}
+
+#top-bar img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+#game-container {
+  display: flex;
+  background: black;
+  height: 36vw;
+  width: 100%;
+}
+
+#bottom-bar {
+  background-color: black;
+  height: 18%;
+  width: 100%;
+}
+
