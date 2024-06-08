@@ -107,7 +107,7 @@ export default class Location {
       }
       if (this.outputTitle === "Nima") {
         document.querySelector("#output p:first-child").textContent = `MISSION:`;
-        document.querySelector("#output p:last-child").textContent = "Apéro.";
+        document.querySelector("#output p:last-child").textContent = "Parrrttyyyy!!";
         document.querySelector("#apero").style.background = " center / contain no-repeat url(./assets/images/apero.jpg)";
         document.querySelector("#you-win p:first-child").textContent = "YOU WIN";
         document.querySelector("#you-win p:last-child").textContent = "Let's rave now.";
